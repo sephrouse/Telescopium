@@ -1,29 +1,208 @@
 <!-- written by syney -->
 {{template "header.html" .}}
 
-        <div class="content container">
-        <h2 class="page-title">我的资产</h2>
+      <div class="content container">
+        <h2 class="page-title">主页 <small>信息，备忘</small></h2>
         <div class="row">
-1234567
-<br>
-7654321`
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <div class="box">
+                    <div class="big-text">
+                        99999999
+                    </div>
+                    <div class="description">
+                        <!-- fixme: should change the formation if the asset was more than one hundred million. -->
+                        资产<strong>总值</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <div class="box">
+                    <div class="big-text">
+                        88888888
+                    </div>
+                    <div class="description">
+                        <!-- fixme: should change the formation if the asset was more than one hundred million. -->
+                        现金<strong>余额</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <div class="box">
+                    <div class="big-text">
+                        xxxxxxx手
+                    </div>
+                    <div class="description">
+                        持有<strong>股份</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <div class="box">
+                    <div class="big-text">
+                        yy只
+                    </div>
+                    <div class="description">
+                        持有<strong>股票</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <div class="box">
+                    <div class="big-text">
+                        z
+                    </div>
+                    <div class="description">
+                        自选g
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <div class="box">
+                    <div class="big-text">
+                        nn
+                    </div>
+                    <div class="description">
+                        <strong>交易</strong>记录
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="row">
+          <div class="col-lg-8">
+            <section class="widget">
+              <header>
+                <h4>资产 <small>近30天资产数据</small></h4>
+                <div class="widget-controls">
+                  <a title="Options" href="#"><i class="glyphicon glyphicon-cog"></i></a>
+                  <a data-widgster="expand" title="Expand" href="#"><i class="glyphicon glyphicon-chevron-up"></i></a>
+                  <a data-widgster="collapse" title="Collapse" href="#"><i class="glyphicon glyphicon-chevron-down"></i></a>
+                  <a data-widgster="close" title="Close" href="#"><i class="glyphicon glyphicon-remove"></i></a>
+                </div>
+              </header>
+              <div class="body no-margin">
+                <div id="visits-chart" class="chart visits-chart">
+                  <svg></svg>
+                </div>
+                <div class="visits-info well well-sm">
+                  <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="key"><i class="fa fa-users"></i> Total Traffic</div>
+                        <div class="value">24 541 <i class="fa fa-caret-up color-green"></i></div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="key"><i class="fa fa-bolt"></i> Unique Visits</div>
+                        <div class="value">14 778 <i class="fa fa-caret-down color-red"></i></div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="key"><i class="fa fa-plus-square"></i> Revenue</div>
+                        <div class="value">$3 583.18 <i class="fa fa-caret-up color-green"></i></div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="key"><i class="fa fa-user"></i> Total Sales</div>
+                        <div class="value">$59 871.12 <i class="fa fa-caret-down color-red"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
+
+        <div class="row">
+          <div class="col-md-6 widget-container">
+                <section class="widget" id="news-widget" data-widgster-load="server/php/widgets/news.php">
+                    <header>
+                        <h5>
+                            备忘 <span class="badge badge-success">xx</span>
+                        </h5>
+                        <span class="text-muted">少个输入框，需要有下拉按钮表示紧急程度。备忘显示列表中需要包含一个“已阅按钮”。点击后就不显示该条了。</span>
+                        <div class="widget-controls">
+                            <a data-widgster="expand" title="Expand" href="#"><i class="glyphicon glyphicon-plus"></i></a>
+                            <a data-widgster="collapse" title="Collapse" href="#"><i class="glyphicon glyphicon-minus"></i></a>
+                            <a data-widgster="load" title="I am spinning!" href="#"><i class="glyphicon glyphicon-refresh"></i></a>
+                            <a data-widgster="close" title="Close" href="#"><i class="glyphicon glyphicon-remove"></i></a>
+                        </div>
+                    </header>
+                    <div class="body">
+                        <ul class="news-list stretchable">
+                            <li>
+                                <span class="icon background-warning">
+                                    <i class="fa fa-star"></i>
+                                </span>
+                                <div class="news-item-info">
+                                    <h4 class="name"><a href="#">First Human Colony on Mars</a></h4>
+                                    <p>
+                                        First 700 people will take part in building first human settlement outside of Earth.
+                                        That's awesome, right?
+                                    </p>
+                                    <div class="time">Mar 20, 18:46</div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="icon background-info">
+                                    <i class="fa fa-microphone"></i>
+                                </span>
+                                <div class="news-item-info">
+                                    <h4 class="name"><a href="#">Light Blue reached $300</a></h4>
+                                    <p>
+                                        Light Blue Inc. shares just hit $300 price. "This was inevitable. It should
+                                        have happen sooner or later" - says NYSE expert.
+                                    </p>
+                                    <div class="time">Sep 25, 11:59</div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="icon background-lime">
+                                    <i class="fa fa-eye"></i>
+                                </span>
+                                <div class="news-item-info">
+                                    <h4 class="name"><a href="#">No more spying</a></h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                    <div class="time">Mar 20, 18:46</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="news-close-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="news-close-modal-label" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h4 class="modal-title" id="news-close-modal-label">Sure?</h4>
+                                </div>
+                                <div class="modal-body">
+                                    Do you really want to unrevertably remove this super news widget?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                                    <button type="button" class="btn btn-danger" id="news-widget-remove">Yes, remove widget</button>
+                                </div>
+
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div>
+                </section>
+              </div>
         </div>
-        <div class="loader-wrap hiding hide">
-            <i class="fa fa-circle-o-notch fa-spin"></i>
-        </div>
-    </div>
+      </div>
+      <div class="loader-wrap hiding hide">
+          <i class="fa fa-circle-o-notch fa-spin"></i>
+      </div>
+  </div>
 <!-- common libraries. required for every page-->
-<script src="lib/jquery/dist/jquery.min.js"></script>
-<script src="lib/jquery-pjax/jquery.pjax.js"></script>
-<script src="lib/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-<script src="lib/widgster/widgster.js"></script>
-<script src="lib/underscore/underscore.js"></script>
+<script src="/public/js/lib/jquery/dist/jquery.min.js"></script>
+<script src="/public/js/lib/jquery-pjax/jquery.pjax.js"></script>
+<script src="/public/js/lib/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+<script src="/public/js/lib/widgster/widgster.js"></script>
+<script src="/public/js/lib/underscore/underscore.js"></script>
 
 <!-- common application js -->
-<script src="js/app.js"></script>
-<script src="js/settings.js"></script>
+<script src="/public/js/js/app.js"></script>
+<script src="/public/js/js/settings.js"></script>
 
 <!-- common templates -->
 <!--
@@ -76,18 +255,18 @@
 
     <!-- page specific scripts -->
         <!-- page libs -->
-        <script src="lib/slimScroll/jquery.slimscroll.min.js"></script>
-        <script src="lib/jquery.sparkline/index.js"></script>
+        <script src="/public/js/lib/slimScroll/jquery.slimscroll.min.js"></script>
+        <script src="/public/js/lib/jquery.sparkline/index.js"></script>
 
-        <script src="lib/backbone/backbone.js"></script>
-        <script src="lib/backbone.localStorage/backbone.localStorage-min.js"></script>
+        <script src="/public/js/lib/backbone/backbone.js"></script>
+        <script src="/public/js/lib/backbone.localStorage/backbone.localStorage-min.js"></script>
 
-        <script src="lib/d3/d3.min.js"></script>
-        <script src="lib/nvd3/build/nv.d3.min.js"></script>
+        <script src="/public/js/lib/d3/d3.min.js"></script>
+        <script src="/public/js/lib/nvd3/build/nv.d3.min.js"></script>
 
         <!-- page application js -->
-        <script src="js/index.js"></script>
-        <script src="js/chat.js"></script>
+        <script src="/public/js/js/index.js"></script>
+        <script src="/public/js/js/chat.js"></script>
 
         <!-- page template -->
         <!--

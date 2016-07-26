@@ -7,6 +7,14 @@ module:testrunner
 GET     /                                       App.Index
 POST    /Index                                  App.Index
 GET     /Login                                  App.Login
+GET     /Stock/Index                            App.StockIndex
+GET     /Stock/Custom                           App.CustomStock
+GET     /Stock/Buy                              App.BuyStock
+GET     /Stock/Sell                             App.SellStock
+GET     /Stock/Asset                            App.MyAsset
+GET     /Profile                                App.Profile
+GET     /Logout                                 App.Logout
+
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
@@ -15,4 +23,5 @@ GET     /favicon.ico                            404
 GET     /public/*filepath                       Static.Serve("public")
 
 # Catch all
-*       /:controller/:action                    :controller.:action
+*       /:controller/:action                    App.NotFound
+*       /:controller                            App.NotFound
